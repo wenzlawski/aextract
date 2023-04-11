@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "aextract"
+version = "0.1.0"
+description = ""
+authors = ["Marc Wenzlawski <marc.wenzlawski@outlook.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+transformers = "^4.27.4"
+torch = "1.11.0"
+numpy = "^1.24.2"
+pandas = "^2.0.0"
+wandb = "^0.14.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
