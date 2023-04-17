@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #$ -cwd
 
@@ -9,5 +8,3 @@ source activate typ
 
 # install requirements
 ./scripts/install.sh
-
-
