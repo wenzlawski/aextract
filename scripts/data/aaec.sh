@@ -1,9 +1,6 @@
 #!/bin/bash
-# Copyright 2022 by Hitachi, Ltd.
-# All rights reserved.
 
-#git clone https://github.com/UKPLab/acl2017-neural_end2end_am.git
-#mv acl2017-neural_end2end_am data/
+SAVE_DIR=data/input/aaec
 
 # Preprocess Argument Annotated Essay Corpus (AAEC)
 mkdir -p data/orig/aaec
@@ -21,14 +18,14 @@ mv ArgumentAnnotatedEssays-2.0 data/aaec
 rm -rf __MACOSX
 
 # Essay-level
-# python -m utils.converter.aaec2mrp \
-# --dir_aaec data/aaec/ArgumentAnnotatedEssays-2.0/brat-project-final \
-# --prefix AAEC_ \
-# --seed 42 \
-# --dev_rate 0.1 \
-# --level essay \
-# --dir_output ${SAVE_DIR}
-#
+python -m aextract.process.aaec \
+	--dir_aaec data/aaec/ArgumentAnnotatedEssays-2.0/brat-project-final \
+	--prefix AAEC_ \
+	--seed 42 \
+	--dev_rate 0.1 \
+	--level essay \
+	--dir_output ${SAVE_DIR}
+
 # # Paragraph-level
 # python -m utils.converter.aaec2mrp \
 # --dir_aaec data/aaec/ArgumentAnnotatedEssays-2.0/brat-project-final \
