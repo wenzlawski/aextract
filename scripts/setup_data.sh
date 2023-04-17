@@ -1,6 +1,8 @@
 #!/bin/bash
 # Download all datasets
 
+mkdir -p data
+
 chmod +x ./scripts/data/*.sh
 
 ./scripts/data/aaec.sh

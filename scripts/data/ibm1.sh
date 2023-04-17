@@ -1,9 +1,4 @@
 #!/bin/bash
-# Copyright 2022 by Hitachi, Ltd.
-# All rights reserved.
-
-SAVE_DIR=data/input
-
 #git clone https://github.com/UKPLab/acl2017-neural_end2end_am.git
 #mv acl2017-neural_end2end_am data/
 

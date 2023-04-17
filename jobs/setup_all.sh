@@ -8,4 +8,4 @@ module load tools/env/proxy2
 source activate typ
 
 # initialise the environment
-./scripts/setup_all.sh
+./scripts/setup_data.sh
